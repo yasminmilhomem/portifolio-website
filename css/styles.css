@@ -13,6 +13,8 @@ body {
     color: #fff;
 }
 
+/* header section */
+
 #header {
     width: 100%;
     height: 100vh;
@@ -55,20 +57,20 @@ body {
     flex-direction: row;
 }
 
-.container nav ul li{
+.container nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-.container nav ul li a{
+.container nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 15px;
     position: relative;
 }
 
-.container nav ul li a::after{
+.container nav ul li a::after {
     content: '';
     width: 0;
     height: 2px;
@@ -79,7 +81,7 @@ body {
     transition: 0.5s;
 }
 
-.container nav ul li a:hover::after{
+.container nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -89,7 +91,7 @@ body {
 }
 
 .container .header-text p {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
 }
 
 .container .header-text h1 {
@@ -100,3 +102,95 @@ body {
     color: #ff004f;
 }
 
+/* about section */
+
+#about {
+    padding: 5rem 3rem;
+    color: #ababab;
+}
+
+#about .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about .row .about-col-1 {
+    flex-basis: 35%; /* a coluna com a imagem vai ocupar 35% da div*/ 
+}
+
+#about .row .about-col-1 img {
+    width: 85%;
+    border-radius: 15px;
+}
+
+#about .row .about-col-2 {
+    flex-basis: 60%;
+}
+
+#about .row .about-col-2 .sub-title {
+    font-size: 3rem;
+    font-weight: 650;
+    color: #fff;
+}
+
+#about .row .about-col-2 p {
+    font-size: 1.2rem;
+    line-height: 170%;
+}
+
+#about .row .about-col-2 p a {
+    text-decoration: none;
+    color: #ababab;
+    font-weight: 502;
+}
+
+#about .row .about-col-2 .tab-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0 2rem;
+}
+
+
+#about .row .about-col-2 .tab-titles .tab-links { 
+    margin-right: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+#about .row .about-col-2 .tab-titles .tab-links::after {
+    content: '';
+    width: 0;
+    height: 0.15rem;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    transition: 0.5s;
+}
+
+#about .row .about-col-2 .tab-titles .tab-links.active-link::after {
+    width: 50%;
+    left: 25%;
+}
+
+#about .row .about-col-2 .tab-contents {
+    display: none;
+}
+
+#about .row .about-col-2 .tab-contents.active-tab{
+    display: block;
+}
+
+#about .row .about-col-2 .tab-contents ul li {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+
+#about .row .about-col-2 .tab-contents ul li span {
+    color: #b54769;
+    font-size: 0.7rem;
+}
