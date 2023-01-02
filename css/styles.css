@@ -36,21 +36,23 @@ body {
 
 .container nav span {
     font-family: 'Paytone One', sans-serif;
-    font-size: 42px;
+    font-size: 2.1rem;
     font-weight: 100;
     color: #ff004f;
 }
 
 .container nav h2 {
     font-family: 'Paytone One', sans-serif;
-    font-size: 42px;
+    font-size: 2.1rem;
     font-weight: 100;
     color: #fff;
 }
 
+/*
 .container .logo {
-    width: 135px;
+    width: 6.75rem;
 }
+*/
 
 .container ul {
     display: flex;
@@ -60,24 +62,24 @@ body {
 .container nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0.6rem 1.25rem;
 }
 
 .container nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9rem;
     position: relative;
 }
 
 .container nav ul li a::after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 0.12rem;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -0.3rem;
     transition: 0.5s;
 }
 
@@ -87,7 +89,7 @@ body {
 
 .container .header-text {
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 .container .header-text p {
@@ -121,14 +123,14 @@ body {
 
 #about .row .about-col-1 img {
     width: 85%;
-    border-radius: 15px;
+    border-radius: 0.9rem;
 }
 
 #about .row .about-col-2 {
     flex-basis: 60%;
 }
 
-#about .row .about-col-2 .sub-title {
+.sub-title {
     font-size: 3rem;
     font-weight: 650;
     color: #fff;
@@ -151,7 +153,6 @@ body {
     justify-content: space-around;
     margin: 1rem 0 2rem;
 }
-
 
 #about .row .about-col-2 .tab-titles .tab-links { 
     margin-right: 1.5rem;
@@ -193,4 +194,63 @@ body {
 #about .row .about-col-2 .tab-contents ul li span {
     color: #b54769;
     font-size: 0.7rem;
+}
+
+/* services section */
+
+#services {
+    padding: 1.5rem 0;
+}
+
+#services .container .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3.125rem;
+}
+
+#services .container .services-list div {
+    padding: 2rem;
+    background: #262626;
+    border-radius: 1.5rem;
+    color: #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#services .container .services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-0.625rem);
+}
+
+#services .container .services-list div i {
+    font-size: 3.5em;
+    margin-top: auto;
+    margin-left: 1rem;
+}
+
+#services .container .services-list div h2 {
+    font-size: 1.7rem;
+    margin: 1rem;
+}
+
+#services .container .services-list div p {
+    text-align: justify;
+    font-size: 0.88rem;
+    margin: 1rem;
+}
+
+#services .container .services-list div a {
+    display: inline-block;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#services .container .services-list div a:hover {
+    transform: translateY(-0.625rem);
+}
+
+#services .container .services-list div a i{
+    font-size: 1rem;
 }
