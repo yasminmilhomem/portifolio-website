@@ -18,7 +18,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("../img/background.png");
+    background-image: url("../img/header-background.png");
     background-size: cover;
     background-position: top;
 }
@@ -251,6 +251,94 @@ body {
     transform: translateY(-0.625rem);
 }
 
-#services .container .services-list div a i{
+#services .container .services-list div a i {
     font-size: 1rem;
+}
+
+ /* portfolio section */
+
+#portfolio {
+    padding: 1.5rem 0;
+}
+
+#portfolio .container .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 3.125rem;
+}
+
+#portfolio .container .work-list .work {
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .container .work-list .work img {
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    transition: transform 0.5s;
+}
+
+#portfolio .container .work-list .work .layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.5), #ff004f);
+    border-radius: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 1rem;
+    transition: height 0.5s;
+}
+
+#portfolio .container .work-list .work .layer h3 {
+    font-weight: 555;
+    margin-bottom: 1rem;
+}
+
+#portfolio .container .work-list .work .layer a {
+    text-decoration: none;
+    color: #ff004f;
+    margin-top: 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    text-align: center;
+}
+
+#portfolio .container .work-list .work:hover img {
+    transform: scale(1.05);
+}
+
+#portfolio .container .work-list .work:hover .layer {
+    height: 100%;
+}
+
+#portfolio .container .btn {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 2rem auto;
+    width: fit-content;
+    border: 0.1rem solid #ff004f;
+    background: rgba;
+    border-radius: 0.4rem;
+    padding: 0.8rem 2.5rem;
+    transition: background 0.6s;
+}
+
+#portfolio .container .btn:hover {
+    background: #ff004f;
 }
