@@ -23,56 +23,50 @@ body {
     background-position: top;
 }
 
-.container {
+#header .container {
     padding: 1.8% 8%; 
 }
 
-.container nav {
+#header .container nav {
     display: flex;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.container nav span {
+#header .container nav span {
     font-family: 'Paytone One', sans-serif;
     font-size: 2.1rem;
     font-weight: 100;
     color: #ff004f;
 }
 
-.container nav h2 {
+#header .container nav h2 {
     font-family: 'Paytone One', sans-serif;
     font-size: 2.1rem;
     font-weight: 100;
     color: #fff;
 }
 
-/*
-.container .logo {
-    width: 6.75rem;
-}
-*/
-
-.container ul {
+#header .container ul {
     display: flex;
     flex-direction: row;
 }
 
-.container nav ul li {
+#header .container nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0.6rem 1.25rem;
 }
 
-.container nav ul li a {
+#header .container nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 0.9rem;
     position: relative;
 }
 
-.container nav ul li a::after {
+#header .container nav ul li a::after {
     content: '';
     width: 0;
     height: 0.12rem;
@@ -83,24 +77,23 @@ body {
     transition: 0.5s;
 }
 
-.container nav ul li a:hover::after {
+#header .container nav ul li a:hover::after {
     width: 100%;
 }
 
-.container .header-text {
+#header .container .header-text {
     margin-top: 20%;
-    font-size: 1.8rem;
 }
 
-.container .header-text p {
+#header .container .header-text p {
     font-size: 2.3rem;
 }
 
-.container .header-text h1 {
+#header .container .header-text h1 {
     font-size: 2.9rem;
 }
 
-.container .header-text h1 span {
+#header .container .header-text h1 span {
     color: #ff004f;
 }
 
@@ -461,4 +454,46 @@ footer {
 footer p i {
     color: #ff004f;
     font-weight: 555;
+}
+
+/* css for mobile */
+@media only screen and (max-width: 600px) {
+    /* header section */
+    #header {
+        background-image: url("../img/phone-backgroundo.png");
+        
+    }
+
+    #header .container .header-text p {
+        font-size: 2rem;
+    }
+    
+    #header .container .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    /* about section */
+    #about {
+
+    }
+
+    /* services section */
+    #services {
+
+    }
+
+    /* portfolio section */
+    #portfolio {
+
+    }
+
+    /* contact section */
+    #contact {
+
+    }
+
+    /* footer section */
+    footer {
+
+    }
 }
