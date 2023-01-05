@@ -463,10 +463,18 @@ nav .fa-solid {
 
 @media only screen and (max-width: 600px) {
     /* header section */
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
     #header {
         background-image: url("../img/phone-background.png");
         background-position: center;
         background-size: cover;
+        margin: 0;
+        padding: 0;
     }
 
     #header .container .header-text {
@@ -514,107 +522,45 @@ nav .fa-solid {
 
     /* about section */
     #about {
-        padding: 1rem 1rem;
-        color: #ababab;
+        padding: 1rem;
         font-size: 0.7rem;
     }
     
-    #about .row {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    #about .row .about-col-1, #about .row .about-col-2 {
+        flex-basis: 100%;
     }
     
-    #about .row .about-col-1 {
-        flex-basis: 50%; /* a coluna com a imagem vai ocupar 35% da div*/ 
-    }
-    
-    #about .row .about-col-1 img {
-        width: 125%;
-        border-radius: 0.9rem;
 
+    #about .row .about-col-1 {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
     }
-    
-    #about .row .about-col-2 {
-        flex-basis: 50%;
-    }
-    
+
     .sub-title {
-        font-size: 2.3rem;
-        font-weight: 650;
-        color: #fff;
+        font-size: 2.4rem;
     }
-    
+
     #about .row .about-col-2 p {
-        font-size: 0.9rem;
+        font-size: 0.75rem;
         line-height: 160%;
     }
     
-    #about .row .about-col-2 p a {
-        text-decoration: none;
-        color: #ababab;
-        font-weight: 502;
-    }
-    
-    #about .row .about-col-2 .tab-titles {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 1rem 0 2rem;
-    }
-    
-    #about .row .about-col-2 .tab-titles .tab-links { 
-        margin-right: 1.5rem;
+    #about .row .about-col-2 .tab-titles .tab-links {
         font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        position: relative;
     }
-    
-    #about .row .about-col-2 .tab-titles .tab-links::after {
-        content: '';
-        width: 0;
-        height: 0.15rem;
-        background-color: #ff004f;
-        position: absolute;
-        left: 0;
-        bottom: -0.4rem;
-        transition: 0.5s;
-    }
-    
-    #about .row .about-col-2 .tab-titles .tab-links.active-link::after {
-        width: 50%;
-        left: 25%;
-    }
-    
-    #about .row .about-col-2 .tab-contents {
-        display: none;
-    }
-    
-    #about .row .about-col-2 .tab-contents.active-tab{
-        display: block;
-    }
-    
-    #about .row .about-col-2 .tab-contents ul li {
-        list-style: none;
-        margin: 0.5rem 0;
-    }
+
     
     #about .row .about-col-2 .tab-contents ul li span {
-        color: #b54769;
         font-size: 0.7rem;
     }
     
 
     /* services section */
-    #services {
-
-    }
+    #services {}
 
     /* portfolio section */
-    #portfolio {
-
-    }
+    #portfolio {}
 
     /* contact section */
     #contact {
@@ -622,8 +568,20 @@ nav .fa-solid {
         padding: 0;
     }
 
+    #contact .container .row .contact-col-1 {
+        flex-basis: 100%;
+    }
+
+    #contact .container .row .contact-col-1 p{
+         font-size: 0.85rem;
+    }
+    #contact .container .row .contact-col-1 i {
+        font-size: 1rem;
+    }
+
+
     /* footer section */
     footer {
-
+        
     }
 }
