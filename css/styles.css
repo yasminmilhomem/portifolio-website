@@ -192,7 +192,7 @@ body {
 /* services section */
 
 #services {
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
 }
 
 #services .container .services-list {
@@ -251,7 +251,7 @@ body {
  /* portfolio section */
 
 #portfolio {
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
 }
 
 #portfolio .container .work-list {
@@ -338,7 +338,7 @@ body {
 /* contact section */
 
 #contact {
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
     color: #ababab;
 }
 
@@ -457,25 +457,154 @@ footer p i {
 }
 
 /* css for mobile */
+nav .fa-solid {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     /* header section */
     #header {
-        background-image: url("../img/phone-backgroundo.png");
-        
+        background-image: url("../img/phone-background.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    #header .container .header-text {
+        margin-top: 30%;
     }
 
     #header .container .header-text p {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     
     #header .container .header-text h1 {
-        font-size: 1.8rem;
+        font-size: 1.35rem;
+    }
+
+    #header .container nav .fa-solid {
+        display: block;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    #header .container nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -12.5rem;
+        width: 10rem;
+        height: 100vh;
+        padding-top: 3rem;
+        display: block;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    #header .container nav ul li {
+        display: block;
+        margin: 1rem;
+    }
+
+    #header .container nav ul .fa-solid {
+        position: absolute;
+        top: 1.2rem;
+        left: 1.2rem;
+        cursor: pointer;
     }
 
     /* about section */
     #about {
+        padding: 1rem 1rem;
+        color: #ababab;
+        font-size: 0.7rem;
+    }
+    
+    #about .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    #about .row .about-col-1 {
+        flex-basis: 50%; /* a coluna com a imagem vai ocupar 35% da div*/ 
+    }
+    
+    #about .row .about-col-1 img {
+        width: 125%;
+        border-radius: 0.9rem;
 
     }
+    
+    #about .row .about-col-2 {
+        flex-basis: 50%;
+    }
+    
+    .sub-title {
+        font-size: 2.3rem;
+        font-weight: 650;
+        color: #fff;
+    }
+    
+    #about .row .about-col-2 p {
+        font-size: 0.9rem;
+        line-height: 160%;
+    }
+    
+    #about .row .about-col-2 p a {
+        text-decoration: none;
+        color: #ababab;
+        font-weight: 502;
+    }
+    
+    #about .row .about-col-2 .tab-titles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 1rem 0 2rem;
+    }
+    
+    #about .row .about-col-2 .tab-titles .tab-links { 
+        margin-right: 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+    }
+    
+    #about .row .about-col-2 .tab-titles .tab-links::after {
+        content: '';
+        width: 0;
+        height: 0.15rem;
+        background-color: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -0.4rem;
+        transition: 0.5s;
+    }
+    
+    #about .row .about-col-2 .tab-titles .tab-links.active-link::after {
+        width: 50%;
+        left: 25%;
+    }
+    
+    #about .row .about-col-2 .tab-contents {
+        display: none;
+    }
+    
+    #about .row .about-col-2 .tab-contents.active-tab{
+        display: block;
+    }
+    
+    #about .row .about-col-2 .tab-contents ul li {
+        list-style: none;
+        margin: 0.5rem 0;
+    }
+    
+    #about .row .about-col-2 .tab-contents ul li span {
+        color: #b54769;
+        font-size: 0.7rem;
+    }
+    
 
     /* services section */
     #services {
@@ -489,7 +618,8 @@ footer p i {
 
     /* contact section */
     #contact {
-
+        margin: 1rem;
+        padding: 0;
     }
 
     /* footer section */

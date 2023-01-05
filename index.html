@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
     <script src="https://kit.fontawesome.com/1fc4a924ef.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,13 +16,15 @@
         <div class="container">
             <nav>
                 <h2><span>y</span>asmin.</h2>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Serviços</a></li>
                     <li><a href="#">Portifólio</a></li>
                     <li><a href="#">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Designer Gráfico</p>
@@ -36,15 +37,14 @@
     <div id="about">
         <div class="row">
             <div class="about-col-1">
-                <img src="./img/about.png" alt="">
+                <img src="./img/about-me.png" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Sobre mim</h1>
                 <p>Graduanda do 9º período de Ciência da Computação,
                     apaixonada por estética e design,
                     estudante de Web Design,
-                    Social Media no Instagram <a href="https://www.instagram.com/mermasdigitais/">@mermasdigitais</a>, 
-                    viciada em internet desde os 11 anos
+                    Social Media no <a href="https://www.instagram.com/mermasdigitais/">@mermasdigitais</a>
                     e demasiadamente curiosa! </p>
 
                 <div class="tab-titles">
@@ -182,8 +182,8 @@
 
     <!-- footer section -->
     <footer class="copyright">
-        <p>© 2023. Made with <i class="fa-regular fa-heart"></i> Yasmin M.</p>
+        <p>© 2023. Made with <i class="fa-regular fa-heart"></i> by Yasmin M.</p>
     </footer>
-
+    <script src="./js/script.js"></script>
 </body>
 </html>
