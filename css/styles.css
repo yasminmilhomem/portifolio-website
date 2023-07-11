@@ -495,7 +495,7 @@ nav .fa-solid {
     }
     
     #header {
-        background-image: url("../img/phone_background.png");
+        background-image: url("../img/phone-background.png");
         background-position: center;
         background-size: cover;
         margin: 0;
@@ -515,6 +515,7 @@ nav .fa-solid {
         position: absolute;
 
     }
+    
 
     #header .container .header-text {
         margin-top: 30%;
@@ -560,11 +561,13 @@ nav .fa-solid {
     }
 
     /* about section */
+
+
     #about {
         padding: 1rem;
         font-size: 0.7rem;
     }
-    
+
     #about .row .about-col-1, #about .row .about-col-2 {
         flex-basis: 100%;
     }
@@ -575,6 +578,8 @@ nav .fa-solid {
         display: flex;
         justify-content: center;
     }
+
+    
 
     .sub-title {
         font-size: 2.4rem;
@@ -596,10 +601,8 @@ nav .fa-solid {
     
 
     /* services section */
-    #services {}
 
     /* portfolio section */
-    #portfolio {}
 
     /* contact section */
     #contact {
@@ -620,7 +623,5 @@ nav .fa-solid {
 
 
     /* footer section */
-    footer {
-        
-    }
+
 }
