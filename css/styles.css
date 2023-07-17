@@ -106,8 +106,8 @@ body {
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
     border: 0.1rem solid rgba(255, 255, 255, 0.25);
-    width: fit-content;
-    padding: 2rem 5rem;
+    width: 60%;
+    padding: 2rem 2rem;
 }
 
 #header .container .header-text p {
@@ -116,25 +116,25 @@ body {
 
 #header .container .header-text h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid #ff004f; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: 0.15rem; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+      typing 4s steps(40, end),
+      blink-caret 0.75s step-end infinite;
   }
   
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 55% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #b54769; }
+    55% { border-color: #b54769; }
   }
 
 
@@ -542,7 +542,15 @@ nav .fa-solid {
     
 
     #header .container .header-text {
-        margin-top: 30%;
+        margin-top: 20%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 2rem;
+        box-shadow: 0 0.25rem 2rem rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1rem);
+        -webkit-backdrop-filter: blur(1rem);
+        border: 0.1rem solid rgba(255, 255, 255, 0.25);
+        width: 100%;
+        padding: 2rem 2rem;
     }
 
     #header .container .header-text p {
@@ -583,6 +591,7 @@ nav .fa-solid {
         left: 1.2rem;
         cursor: pointer;
     }
+    
 
     /* about section */
 
